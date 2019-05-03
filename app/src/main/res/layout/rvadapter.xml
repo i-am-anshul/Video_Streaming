@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorAccent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+
+            <ImageView
+                android:id="@+id/adap_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"/>
+<!--
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_gravity="bottom|center_horizontal"
+                android:max="100"
+                android:progress="40"
+                android:background="@android:color/black"
+                android:progressBackgroundTint="@color/colorAccent"
+                android:layout_margin="2dp"
+                />
+-->
+            <FrameLayout
+                android:layout_height="5dp"
+                android:layout_width="0dp"
+                android:id="@+id/v1"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="bottom|left"
+
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"/>
+            </FrameLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/adap_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+          <!--  <TextView
+                android:id="@+id/adap_views"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
